@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogInComponent } from './log-in/log-in.component';
@@ -20,6 +21,7 @@ import { DenyComponent } from './deny/deny.component';
   ],
   imports: [
     BrowserModule,
+    ZXingScannerModule,
     AppRoutingModule
   ],
   providers: [],

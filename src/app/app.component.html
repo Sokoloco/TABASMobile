@@ -14,12 +14,11 @@
     <!--Side Nav-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <a routerLink="/log-in">Log-in</a>
-        <a routerLink="/sign-up">Sign-up</a>
-        <a routerLink="/reg-scan">Register Scanned Luggage</a>
-        <a routerLink="">Deny Luggage</a>
-        <a routerLink="/reg-plane">Register Luggage to Plane</a>
+        <a routerLink="/log-in" onclick="closeNav()">Log-in</a>
+        <a routerLink="/sign-up" onclick="closeNav()">Sign-up</a>
+        <a routerLink="/reg-scan" onclick="closeNav()">Register Scanned Luggage</a>
+        <a routerLink="" onclick="closeNav()">Deny Luggage</a>
+        <a routerLink="/reg-plane" onclick="closeNav()">Register Luggage to Plane</a>
 
     </div>
     <!--Top of the page, has the open side nav button-->  
@@ -29,11 +28,12 @@
     <div id="main">
         
     </div>
-    <router-outlet></router-outlet>
+    
 
 
 </body>
-
+<p>TEC.Airlines.Baggage.Administration.System</p>
+<router-outlet></router-outlet>
 
 
 </html>
