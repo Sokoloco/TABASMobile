@@ -1,5 +1,10 @@
+<script >
+  function go(){
+    console.log("oli")
+  }
+</script>
 <div>
-  <zxing-scanner [formats]="['QR_CODE', 'EAN_13', 'CODE_128', 'DATA_MATRIX']" 
-  scannerEnabled="true" (scanComplete)="go()"></zxing-scanner>
-  <script src="/src/assets/JavaScript/sidenav.js"></script>
+  <zxing-scanner
+  scannerEnabled="true" start="true" (scanSuccess)="golo($event)"></zxing-scanner>
+  
 </div>
