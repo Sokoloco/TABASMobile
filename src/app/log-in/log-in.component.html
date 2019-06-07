@@ -1,4 +1,17 @@
-<p>
-  log-in works!
-</p>
- 
+<div class="alert alert-danger" role="alert" *ngIf="showAlert">
+    Alguno de los datos esta erroneo, revisar los datos.
+</div>
+
+<div>
+  <br>
+  <table>
+    <div class="scrollit">
+      <label for="input-usr">Nombre de Usuario:</label>
+      <input #inputUsr id="input-usr" type="text" class="form-control" />
+      <label for="input-pass">Contraseña:</label>
+      <input #inputPass id="input-pass" type="password" class="form-control" />
+      <button type="button" class="btn btn-dark"
+        (click)="createUser(inputUsr.value, inputPass.value)">Registrarse</button>
+    </div>
+  </table>
+</div>
