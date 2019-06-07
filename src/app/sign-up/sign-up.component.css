@@ -1,0 +1,27 @@
+.scrollit {
+    overflow: none;
+    height:100%;
+    width: 100%;
+    background-color:  #3C4A60 ;
+    color: aliceblue;
+
+}
+
+input{
+    margin: 1% 2%;
+    width: 50%;
+}
+
+label{
+    border: 2px;
+    background-color:  #45494F;
+    
+    width: 100%;
+    text-align: left;
+    text-indent: 3%;
+
+}
+
+button{
+    margin: 0% 15% 3%;
+}

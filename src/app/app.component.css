@@ -13,7 +13,11 @@
 }
 
 .topNav{
-  display:inline-block;margin-right: 10px;
+  width: 100%;
+  display:inline-block;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #45494F;
 }
 
 /* The navigation menu links */
@@ -53,6 +57,6 @@
 }
 
 #tabastitle{
-  text-align:right;
+  text-align:left;
   float:right;
 }

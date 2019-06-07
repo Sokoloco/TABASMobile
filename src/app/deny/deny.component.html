@@ -1,3 +1,13 @@
-<p>
-  deny works!
-</p>
+<label for="inputRazon">Razon por la Negacion</label>
+<input #inputNom id="inputRazon" type="text" class="form-control" />
+  <qr-scanner
+          [debug]="false"
+          [canvasWidth]="1080" 
+          [canvasHeight]="720" 
+          [stopAfterScan]="true" 
+          [updateTime]="500"> 
+  </qr-scanner>
+
+  <!-- mandar la razon por la que se rechaza la maleta y el qr leido  el qr esta en el ts-->
+<button type="button" class="btn btn-dark"
+(click)="asignPlane(inputRazon.value, loggedUser, qr)">Registrarse</button>

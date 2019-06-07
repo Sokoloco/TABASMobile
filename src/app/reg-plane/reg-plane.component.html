@@ -1,4 +1,7 @@
-<!-- app.component.html -->
+<!-- load  bagcarts al select-->
+<select class="form-control" id="selectBCart" formControlName="selectBCart" (change)="selectChangeHandlerSal($event)">
+<option value="" disabled selected>Seleccione BagCart</option>
+<option *ngFor="let bagcarts " [value]="bagcart.id">{{bagcart.id}}</option>
 <qr-scanner
         [debug]="false"
         [canvasWidth]="1080" 
@@ -6,3 +9,7 @@
         [stopAfterScan]="true" 
         [updateTime]="500"> 
 </qr-scanner>
+
+  <!-- mandar el bagcart seleccionado y el qr leido  el qr esta en el ts-->
+  <button type="button" class="btn btn-dark"
+  (click)="asignPlane(selectBCart.value, qr)">Registrarse</button>

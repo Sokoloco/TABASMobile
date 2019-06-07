@@ -39,6 +39,7 @@ export class RegPlaneComponent implements OnInit {
 
   this.qrScannerComponent.capturedQr.subscribe(result => {
       console.log(result);
+      
   });
   }
 
